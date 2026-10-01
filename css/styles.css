@@ -518,28 +518,8 @@ a:focus-visible {
   gap: var(--space-2);
 }
 
-.hero__avatar {
-  display: flex;
-  justify-content: center;
-}
-
-.avatar {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: var(--font-size-5xl);
-  font-weight: var(--font-weight-bold);
-  color: #fff;
-  box-shadow: var(--shadow-xl);
-}
-
 @media (min-width: 768px) {
   .hero__content {
-    grid-template-columns: 1fr 320px;
     text-align: left;
   }
 

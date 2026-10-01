@@ -1,7 +1,7 @@
 {
   "basics": {
-    "name": "Gemalyn Cabanos",
-    "headline": "Implementation Lead | Managed Security Services",
+    "name": "Engr. Gemalyn Cabanos",
+    "headline": "Managed Security Services",
     "pitch": "Cybersecurity professional with 7+ years leading MSS, Security Operations, SIEM, SOAR, and platform operations — driving detection quality, automation, and team excellence across enterprise clients.",
     "email": "gemalyncabanos@gmail.com",
     "phone": "+63 968 297 0029",
@@ -13,7 +13,7 @@
   "whatIDo": [
     {
       "title": "MSS & Security Operations Leadership",
-      "description": "Lead engineering teams delivering 24/7 security monitoring, incident response, and platform operations for enterprise MSS clients."
+      "description": "Lead engineering teams that support 24/7 security monitoring, incident response, and platform operations for enterprise MSS clients."
     },
     {
       "title": "SIEM/SOAR Engineering & Optimization",
@@ -21,7 +21,7 @@
     },
     {
       "title": "Platform Onboarding & Migration",
-      "description": "Manage end-to-end onboarding of new clients and migrate legacy platforms (e.g., Ivanti → SDP) with zero-downtime transitions."
+      "description": "Manage end-to-end onboarding of new data sources (correlation rules, log integrations) and migrate legacy platforms (e.g., Ivanti → SDP) with zero-downtime transitions. Lead engineers who enroll data sources and build detection content."
     },
     {
       "title": "Vulnerability & Threat Management",
