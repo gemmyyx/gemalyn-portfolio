@@ -472,6 +472,8 @@ a:focus-visible {
   gap: var(--space-12);
   align-items: center;
   text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .hero__eyebrow {
@@ -519,21 +521,18 @@ a:focus-visible {
 }
 
 @media (min-width: 768px) {
-  .hero__content {
-    text-align: left;
+  .hero__title {
+    font-size: var(--font-size-5xl);
   }
 
   .hero__pitch {
-    margin-left: 0;
-    margin-right: 0;
+    font-size: var(--font-size-xl);
   }
+}
 
-  .hero__actions {
-    justify-content: flex-start;
-  }
-
-  .hero__location {
-    justify-content: flex-start;
+@media (min-width: 1024px) {
+  .hero__title {
+    font-size: var(--font-size-5xl);
   }
 }
 
