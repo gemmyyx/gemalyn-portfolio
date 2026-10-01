@@ -69,13 +69,12 @@
   function toggleMobileNav() {
     const isOpen = navList.classList.toggle('nav__list--open');
     navToggle.setAttribute('aria-expanded', isOpen);
-    document.body.style.overflow = isOpen ? 'hidden' : '';
+    // Allow page scroll even when menu is open (better UX)
   }
 
   function closeMobileNav() {
     navList.classList.remove('nav__list--open');
     navToggle.setAttribute('aria-expanded', 'false');
-    document.body.style.overflow = '';
   }
 
   // --------------------------------------------------------------------------

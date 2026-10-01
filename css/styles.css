@@ -368,10 +368,12 @@ a:focus-visible {
   display: none;
   width: 44px;
   height: 44px;
-  background: transparent;
-  border: none;
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
   cursor: pointer;
   padding: 0;
+  box-shadow: var(--shadow-sm);
 }
 
 .nav__toggle-icon,
@@ -692,6 +694,7 @@ a:focus-visible {
   padding-left: var(--space-6);
   max-width: 900px;
   margin: 0 auto;
+  list-style: none;
 }
 
 .timeline::before {
