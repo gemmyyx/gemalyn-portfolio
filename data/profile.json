@@ -1,0 +1,170 @@
+{
+  "basics": {
+    "name": "Gemalyn Cabanos",
+    "headline": "Implementation Lead | Managed Security Services",
+    "pitch": "Cybersecurity professional with 7+ years leading MSS, Security Operations, SIEM, SOAR, and platform operations — driving detection quality, automation, and team excellence across enterprise clients.",
+    "email": "gemalyncabanos@gmail.com",
+    "phone": "+63 968 297 0029",
+    "location": "Naga City, Philippines",
+    "linkedin": "https://www.linkedin.com/in/gemcabanos",
+    "photo": "assets/photo.jpg"
+  },
+  "about": "Cybersecurity professional with over 7 years of experience supporting Managed Security Services (MSS), Security Operations, SIEM, SOAR, and security platform operations. Currently an Implementation Lead overseeing engineering teams responsible for security monitoring, automation, platform onboarding, and operational support across multiple enterprise clients. Experienced supporting SIEM, SOAR, EDR, Vulnerability Management, NMS, and IT service management platforms (SDP/Ivanti), with additional oversight of automated reporting, advisory generation, ticketing workflows, and operational playbooks. Strengths include team leadership, operational coordination, stakeholder management, and driving quality outcomes for technical teams in fast-paced environments.",
+  "whatIDo": [
+    {
+      "title": "MSS & Security Operations Leadership",
+      "description": "Lead engineering teams delivering 24/7 security monitoring, incident response, and platform operations for enterprise MSS clients."
+    },
+    {
+      "title": "SIEM/SOAR Engineering & Optimization",
+      "description": "Design correlation rules, build SOAR playbooks, and continuously tune detections to reduce false positives and accelerate investigations."
+    },
+    {
+      "title": "Platform Onboarding & Migration",
+      "description": "Manage end-to-end onboarding of new clients and migrate legacy platforms (e.g., Ivanti → SDP) with zero-downtime transitions."
+    },
+    {
+      "title": "Vulnerability & Threat Management",
+      "description": "Oversee VM programs, EDR/NDR operations, and correlation engineering across diverse security stacks (Fortigate, Cisco, Trend Micro, Rapid7, etc.)."
+    }
+  ],
+  "skills": {
+    "core": [
+      "Managed Security Services (MSS)",
+      "Security Operations (SOC)",
+      "SIEM Platform Management",
+      "SOAR Playbook Development",
+      "EDR / NDR Operations",
+      "Vulnerability Management",
+      "Correlation Rule Engineering",
+      "Platform Onboarding & Migration",
+      "ITSM / ITIL Service Management",
+      "Incident & Problem Management"
+    ],
+    "tools": [
+      "Splunk Cloud / Enterprise SIEM",
+      "Siemplify (SOAR)",
+      "Site24x7 (NMS)",
+      "LibreNMS",
+      "ManageEngine ServiceDesk Plus",
+      "Ivanti / SDP",
+      "Rapid7 (InsightVM/InsightIDR)",
+      "McAfee SIEM (ESM)",
+      "BeyondTrust (PAM)",
+      "Fortigate / Cisco ASA / Sophos / TippingPoint / Trend Micro",
+      "OpenAPI",
+      "OmniRoute (AI Gateway)",
+      "Claude / Claude Code",
+      "TrueWatch (Observability)"
+    ],
+    "soft": [
+      "Team Leadership",
+      "Operational Coordination",
+      "Stakeholder Management",
+      "Escalation Management",
+      "Cross-functional Collaboration",
+      "Process Improvement",
+      "Technical Communication",
+      "Mentoring & Coaching"
+    ]
+  },
+  "experience": [
+    {
+      "company": "Trends & Technologies, Inc.",
+      "title": "Implementation Lead",
+      "dates": "Jul 2025 – Present",
+      "location": "Philippines · Hybrid",
+      "additional": "Additional Responsibility: Optimization and Support Manager (OIC), Apr – Jul 2026",
+      "bullets": [
+        "Oversaw teams responsible for managing and supporting security and infrastructure platforms used by MSS and MIS clients.",
+        "Managed engineers supporting SIEM, SOAR, EDR/NDR, Vulnerability Management, NMS (Site24x7), and ITSM platforms (Ivanti and SDP).",
+        "Ensured supported platforms remained operational, optimized, and aligned with client and business requirements.",
+        "Oversaw continuous tuning and optimization activities to improve detection quality, reduce false positives, minimize alert fatigue, and improve platform performance.",
+        "Managed Incident, Problem, Change, and Service Request activities related to supported security and infrastructure technologies.",
+        "Coordinated platform migrations and service improvements, including the transition from Ivanti to SDP for MSS and MIS clients.",
+        "Oversaw onboarding and operational readiness activities for new clients utilizing NMS and other managed service platforms.",
+        "Served as the primary escalation point for operational issues, ensuring timely resolution of client concerns and service-impacting events.",
+        "Worked closely with Implementation, Engineering, and Operations teams to ensure smooth transition of new services into business-as-usual (BAU) support."
+      ]
+    },
+    {
+      "company": "Trends & Technologies, Inc.",
+      "title": "Correlation Engineering Lead",
+      "dates": "Feb 2024 – Jul 2025",
+      "location": "Philippines · Hybrid",
+      "bullets": [
+        "Led the design and optimization of SIEM correlation rules and use cases across multiple security platforms, aligning detections with client security requirements and continuously improving detection accuracy.",
+        "Collaborated with stakeholders to fine-tune security content, reduce false positives, and enhance threat visibility.",
+        "Developed SOAR playbooks to automate SIEM-driven incident response, improving SOC operational efficiency and accelerating security investigations."
+      ]
+    },
+    {
+      "company": "Trends & Technologies, Inc.",
+      "title": "Senior Correlation Engineer",
+      "dates": "Apr 2022 – Feb 2024",
+      "location": "Philippines · Hybrid",
+      "bullets": [
+        "Analyzed events to create tailored correlation rules for security data sources including Fortigate, Cisco ASA, Sophos, TippingPoint, Trend Micro, management servers, Active Directory, VPN, and other sources depending on client security infrastructure.",
+        "Mapped rules to defined use cases and presented findings to clients for continuous fine-tuning of existing rules.",
+        "Built playbooks under SOAR, leveraging SIEM-generated alarms to drive automation supporting SOC operations."
+      ]
+    },
+    {
+      "company": "Trends & Technologies, Inc.",
+      "title": "Security Support Engineer",
+      "dates": "Feb 2019 – Apr 2022",
+      "location": "Philippines · Hybrid",
+      "bullets": [
+        "Performed data gathering and scrutinized supported and non-supported data sources for McAfee SIEM (ESM).",
+        "Led implementation activities in relevance with firewall rules and conducted correlation rule fine-tuning, including creation of new rules in collaboration with clients and refinement of pre-defined rules to enhance monitoring alerts.",
+        "Applied troubleshooting techniques in coordination with TAC support for McAfee SIEM.",
+        "Performed data gathering and implementation for BeyondTrust (Privileged Account Management), including enrollment of assets and accounts.",
+        "Conducted basic troubleshooting in coordination with asset owners and created Smart Rules to support privileged account monitoring."
+      ]
+    },
+    {
+      "company": "Globe Telecom",
+      "title": "Internship Trainee",
+      "dates": "Mar 2015 – May 2015",
+      "location": "Philippines",
+      "bullets": [
+        "Followed instructions of supervisors and co-workers, capable of asking for advice and clarification when unsure.",
+        "Gained basic knowledge on MatLab, Multisim, and LabView."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Electronics Engineering",
+      "school": "Bicol State College of Applied Sciences and Technology",
+      "year": "2013 – 2018"
+    },
+    {
+      "degree": "High School",
+      "school": "Naga Hope Christian School",
+      "year": "2009 – 2013"
+    },
+    {
+      "degree": "Elementary",
+      "school": "Blessed Lights International Christian Academy",
+      "year": "2003 – 2009"
+    }
+  ],
+  "certifications": [
+    "Rapid7 RTSP - Foundation Certification (Aug 2026)",
+    "Certified Product Specialist: Security Information and Event Management (SIEM) (Mar 2023)",
+    "EC-Council Certified Incident Handler (Jul 2022)",
+    "Siemplify Certified SOAR Operator (SCSO) (Jul 2022)",
+    "Siemplify Certified SOAR Analyst (SCSA) (Jul 2022)",
+    "Siemplify Platform Fundamentals - Version 6+ (SPFv6) (May 2022)",
+    "NSE 1 Network Security Associate (Jul 2020)",
+    "Enterprise Security Manager 11.0 Essentials (Apr 2020)",
+    "Certified Ethical Hacker (Jun 2019)",
+    "ITIL 4 (May 2019)",
+    "CompTIA Security+ (Apr 2019)",
+    "Electronics Engineer License (2018)",
+    "Electronics Technician License (2018)"
+  ],
+  "projects": [],
+  "languages": ["English (Professional)", "Tagalog/Filipino (Native)"]
+}

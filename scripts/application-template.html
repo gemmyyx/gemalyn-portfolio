@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tailored application for {{company}} - {{job_title}} position. Cybersecurity professional with 7+ years leading MSS, Security Operations, SIEM, SOAR, and platform operations.">
+  <meta name="author" content="Gemalyn Cabanos">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gemalyn Cabanos — Application for {{job_title}} at {{company}}">
+  <meta property="og:description" content="Cybersecurity professional with 7+ years leading MSS, Security Operations, SIEM, SOAR, and platform operations.">
+  <meta property="og:image" content="../assets/og-image.jpg">
+
+  <title>Gemalyn Cabanos — Application for {{job_title}} at {{company}}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="header" role="banner">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="../index.html" class="nav__logo" aria-label="Gemalyn Cabanos - Home">GC</a>
+      <ul class="nav__list" role="list">
+        <li><a href="../index.html#about" class="nav__link">About</a></li>
+        <li><a href="../index.html#what-i-do" class="nav__link">What I Do</a></li>
+        <li><a href="../index.html#skills" class="nav__link">Skills</a></li>
+        <li><a href="../index.html#experience" class="nav__link">Experience</a></li>
+        <li><a href="../index.html#education" class="nav__link">Education</a></li>
+        <li><a href="../index.html#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span class="nav__toggle-icon" aria-hidden="true"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main" role="main">
+    <!-- Hero Section - Tailored -->
+    <section class="hero hero--application" aria-labelledby="hero-heading">
+      <div class="container hero__content">
+        <div class="hero__text">
+          <p class="hero__eyebrow">Application for {{job_title}} at {{company}}</p>
+          <h1 id="hero-heading" class="hero__title">{{name}}</h1>
+          <p class="hero__pitch">{{pitch}}</p>
+          <div class="hero__actions">
+            <a href="../assets/resume.pdf" class="btn btn--primary" download>Download Resume</a>
+            <a href="../index.html#contact" class="btn btn--secondary">Contact Me</a>
+            <a href="{{linkedin}}" class="btn btn--ghost" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+          <p class="hero__location" aria-label="Location">📍 {{location}}</p>
+          <p class="hero__date">Prepared on {{date}}</p>
+        </div>
+        <div class="hero__avatar" aria-hidden="true">
+          <div class="avatar" role="img" aria-label="{{name}}">{{name | initials}}</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Custom Greeting -->
+    <section class="section greeting" aria-labelledby="greeting-heading">
+      <div class="container">
+        <div class="greeting__card">
+          <h2 id="greeting-heading" class="greeting__title">Hi {{company}} Team,</h2>
+          <p class="greeting__text">Thank you for reviewing my application for the <strong>{{job_title}}</strong> position. I've tailored this page to highlight the experience and skills most relevant to your needs. My full portfolio is available at <a href="../index.html">gemcabanos.github.io</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlighted Skills Section -->
+    <section class="section skills skills--highlighted" aria-labelledby="highlighted-skills-heading">
+      <div class="container">
+        <header class="section__header">
+          <h2 id="highlighted-skills-heading" class="section__title">Skills Highlighted for This Role</h2>
+        </header>
+
+        {{#if highlighted_core_skills}}
+        <div class="skills__groups">
+          <div class="skills__group">
+            <h3 class="skills__group-title">Core Competencies</h3>
+            <ul class="skills__list" role="list">
+              {{#each highlighted_core_skills}}
+              <li>{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
+
+          {{#if highlighted_tool_skills}}
+          <div class="skills__group">
+            <h3 class="skills__group-title">Tools & Platforms</h3>
+            <ul class="skills__list" role="list">
+              {{#each highlighted_tool_skills}}
+              <li>{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
+          {{/if}}
+
+          {{#if highlighted_soft_skills}}
+          <div class="skills__group">
+            <h3 class="skills__group-title">Soft Skills</h3>
+            <ul class="skills__list" role="list">
+              {{#each highlighted_soft_skills}}
+              <li>{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
+          {{/if}}
+        </div>
+        {{/if}}
+      </div>
+    </section>
+
+    <!-- Relevant Experience Section -->
+    <section class="section experience" aria-labelledby="relevant-exp-heading">
+      <div class="container">
+        <header class="section__header">
+          <h2 id="relevant-exp-heading" class="section__title">Most Relevant Experience</h2>
+        </header>
+        <ol class="timeline" role="list">
+          {{#each relevant_experience}}
+          <li class="timeline__item">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <div class="timeline__meta">
+                <time class="timeline__dates" datetime="{{dates}}">{{dates}}</time>
+                {{#if location}}<span class="timeline__location">{{location}}</span>{{/if}}
+              </div>
+              <h3 class="timeline__title">{{title}}</h3>
+              <p class="timeline__company">{{company}}</p>
+              {{#if additional}}<p class="timeline__additional">{{additional}}</p>{{/if}}
+              <ul class="timeline__bullets" role="list">
+                {{#each bullets}}
+                <li>{{this}}</li>
+                {{/each}}
+              </ul>
+            </div>
+          </li>
+          {{/each}}
+        </ol>
+        <p class="experience__note"><a href="../index.html#experience">View full experience on main portfolio →</a></p>
+      </div>
+    </section>
+
+    <!-- About Section (condensed) -->
+    <section id="about" class="section about" aria-labelledby="about-heading">
+      <div class="container">
+        <header class="section__header">
+          <h2 id="about-heading" class="section__title">About Me</h2>
+        </header>
+        <div class="about__content">
+          <p class="about__text">{{about}}</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section id="education" class="section education" aria-labelledby="education-heading">
+      <div class="container">
+        <header class="section__header">
+          <h2 id="education-heading" class="section__title">Education & Certifications</h2>
+        </header>
+        <div class="education__grid">
+          <div class="education__column">
+            <h3 class="education__subtitle">Education</h3>
+            <dl class="education__list" role="list">
+              {{#each education}}
+              <div class="education__item">
+                <dt class="education__degree">{{degree}}</dt>
+                <dd class="education__school">{{school}}</dd>
+                <dd class="education__year">{{year}}</dd>
+              </div>
+              {{/each}}
+            </dl>
+          </div>
+          <div class="education__column">
+            <h3 class="education__subtitle">Certifications</h3>
+            <ul class="certifications__list" role="list">
+              {{#each certifications}}
+              <li>{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+        <div class="languages">
+          <h3 class="education__subtitle">Languages</h3>
+          <ul class="languages__list" role="list">
+            {{#each languages}}
+            <li>{{this}}</li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <header class="section__header">
+          <h2 id="contact-heading" class="section__title">Get In Touch</h2>
+        </header>
+        <div class="contact__content">
+          <p class="contact__text">I'd welcome the opportunity to discuss how my experience aligns with your team's needs. Feel free to reach out!</p>
+          <div class="contact__links">
+            <a href="mailto:{{email}}" class="contact__link">
+              <span class="contact__icon" aria-hidden="true">✉️</span>
+              <span>{{email}}</span>
+            </a>
+            <a href="tel:{{phone}}" class="contact__link">
+              <span class="contact__icon" aria-hidden="true">📞</span>
+              <span>{{phone}}</span>
+            </a>
+            <a href="{{linkedin}}" class="contact__link" target="_blank" rel="noopener noreferrer">
+              <span class="contact__icon" aria-hidden="true">💼</span>
+              <span>LinkedIn Profile</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p class="footer__text">&copy; {{year}} {{name}}. All rights reserved. | <a href="../index.html">Back to Portfolio</a></p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
